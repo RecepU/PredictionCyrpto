@@ -1,0 +1,31 @@
+name: Run Crypto Predictor
+
+on:
+  workflow_dispatch:  # Allows manual triggering of the workflow
+
+jobs:
+  run-predictor:
+    runs-on: ubuntu-latest  # Use GitHub's Ubuntu runner
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3  # Fetch the latest code
+
+    - name: Set Up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install Dependencies
+      run: pip install -r requirements.txt  # Install required Python libraries
+
+    - name: Run Predictor Script
+      run: |
+        python app.py > predictions.json  # Save predictions to a JSON file
+        cat predictions.json
+
+    - name: Upload Predictions
+      uses: actions/upload-artifact@v3  # Make predictions available for download
+      with:
+        name: predictions
+        path: predictions.json
