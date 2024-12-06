@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 import numpy as np
-from pytrends.request import TrendReq
+import json
 
 # API Keys
 COINMARKETCAP_API_KEY = "07a86387-ea6f-40f9-b81e-03261c529152"
@@ -11,8 +11,6 @@ ALPHA_VANTAGE_API_KEY = "VJKPIK7L2NTUKR9V"
 
 # KuCoin Endpoint
 KUCOIN_API_URL = "https://api.kucoin.com/api/v1/market/allTickers"
-
-
 
 # 1. Fetch data from KuCoin
 def fetch_kucoin_data():
@@ -31,7 +29,6 @@ def fetch_kucoin_data():
         print(f"Error fetching KuCoin data: {e}")
         return pd.DataFrame()
 
-
 # 2. Fetch data from CoinMarketCap
 def fetch_coinmarketcap_data():
     url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
@@ -49,7 +46,6 @@ def fetch_coinmarketcap_data():
     except Exception as e:
         print(f"Error fetching CoinMarketCap data: {e}")
         return pd.DataFrame()
-
 
 # 3. Fetch data from CoinGecko
 def fetch_coingecko_data():
@@ -77,7 +73,6 @@ def fetch_coingecko_data():
         print(f"Error fetching CoinGecko data: {e}")
         return pd.DataFrame()
 
-
 # 4. Fetch data from LunarCrush
 def fetch_lunarcrush_data():
     url = "https://api.lunarcrush.com/v2/assets"
@@ -97,7 +92,6 @@ def fetch_lunarcrush_data():
     except Exception as e:
         print(f"Error fetching LunarCrush data: {e}")
         return pd.DataFrame()
-
 
 # 5. Combine and rank tokens by potential gainers
 def rank_gainers(data_sources):
@@ -132,10 +126,8 @@ def rank_gainers(data_sources):
         print(f"Error during ranking: {e}")
         return pd.DataFrame()
 
-
 # Main function
 if __name__ == "__main__":
-    print("Fetching data from multiple sources...")
     kucoin_data = fetch_kucoin_data()
     cmc_data = fetch_coinmarketcap_data()
     coingecko_data = fetch_coingecko_data()
@@ -144,12 +136,13 @@ if __name__ == "__main__":
     # Collect all data sources
     data_sources = [kucoin_data, cmc_data, coingecko_data, lunar_data]
 
-    print("Calculating top gainers...")
     predictions = rank_gainers(data_sources)
 
-    print("\nTop Predicted Gainers:")
     if not predictions.empty:
-        print(predictions.to_string(index=False))
+        predictions_json = predictions.to_dict(orient="records")
+        # Write ONLY the JSON data to predictions.json
+        with open("predictions.json", "w") as f:
+            json.dump(predictions_json, f, indent=4)
+        print("Predictions saved to predictions.json")
     else:
         print("No data available to calculate predictions.")
-

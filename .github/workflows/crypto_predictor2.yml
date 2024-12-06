@@ -29,3 +29,9 @@ jobs:
       with:
         name: predictions
         path: predictions.json
+        
+    - name: Run Prediction Script
+      run: |
+        python app.py
+        cat predictions.json  # For debugging in logs (optional)
+
