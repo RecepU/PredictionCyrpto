@@ -8,7 +8,7 @@ def fetch_predictions_from_github():
     repo = "PredictionCyrpto"
     headers = {"Authorization": f"Bearer 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"}  # Replace with your token
 
-# Get the list of artifacts
+    # Get the list of artifacts
     url = f"https://api.github.com/repos/{owner}/{repo}/actions/artifacts"
     response = requests.get(url, headers=headers)
 

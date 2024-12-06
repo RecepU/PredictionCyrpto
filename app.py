@@ -128,21 +128,23 @@ def rank_gainers(data_sources):
 
 # Main function
 if __name__ == "__main__":
-    kucoin_data = fetch_kucoin_data()
-    cmc_data = fetch_coinmarketcap_data()
-    coingecko_data = fetch_coingecko_data()
-    lunar_data = fetch_lunarcrush_data()
+    try:
+        kucoin_data = fetch_kucoin_data()
+        cmc_data = fetch_coinmarketcap_data()
+        coingecko_data = fetch_coingecko_data()
+        lunar_data = fetch_lunarcrush_data()
 
-    # Collect all data sources
-    data_sources = [kucoin_data, cmc_data, coingecko_data, lunar_data]
+        # Collect all data sources
+        data_sources = [kucoin_data, cmc_data, coingecko_data, lunar_data]
 
-    predictions = rank_gainers(data_sources)
+        predictions = rank_gainers(data_sources)
 
-    if not predictions.empty:
-        predictions_json = predictions.to_dict(orient="records")
-        # Write ONLY the JSON data to predictions.json
-        with open("predictions.json", "w") as f:
-            json.dump(predictions_json, f, indent=4)
-        print("Predictions saved to predictions.json")
-    else:
-        print("No data available to calculate predictions.")
+        if not predictions.empty:
+            predictions_json = predictions.to_dict(orient="records")
+            with open("predictions.json", "w") as f:
+                json.dump(predictions_json, f, indent=4)
+            print("Predictions saved to predictions.json")
+        else:
+            print("No data available to calculate predictions.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
