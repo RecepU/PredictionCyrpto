@@ -13,23 +13,24 @@ def fetch_predictions_from_github():
     response = requests.get(url, headers=headers)
 
     print("Response Status Code:", response.status_code)
-    print("Response JSON:", response.json())  # Debugging the response
+    if response.status_code != 200:
+        print("Failed to fetch artifacts.")
+        return False
 
-    if response.status_code == 200:
-        artifacts = response.json().get("artifacts", [])
-        for artifact in artifacts:
-            print(f"Found Artifact: {artifact['name']}")  # Debugging artifact names
-            if artifact["name"] == "predictions":  # Match artifact name
-                # Download the artifact
-                download_url = artifact["archive_download_url"]
-                download_response = requests.get(download_url, headers=headers)
-                if download_response.status_code == 200:
-                    with open("predictions.json.zip", "wb") as f:
-                        f.write(download_response.content)
-                    print("Predictions downloaded successfully.")
-                    return True
-                else:
-                    print(f"Failed to download artifact. Status Code: {download_response.status_code}")
+    artifacts = response.json().get("artifacts", [])
+    for artifact in artifacts:
+        print(f"Found Artifact: {artifact['name']}")
+        if artifact["name"] == "predictions":
+            # Download the artifact
+            download_url = artifact["archive_download_url"]
+            download_response = requests.get(download_url, headers=headers)
+            if download_response.status_code == 200:
+                with open("predictions.json.zip", "wb") as f:
+                    f.write(download_response.content)
+                print("Predictions artifact downloaded successfully.")
+                return True
+            else:
+                print(f"Failed to download artifact. Status Code: {download_response.status_code}")
     print("No predictions artifact found.")
     return False
 
@@ -59,7 +60,6 @@ def extract_and_validate_predictions():
             return predictions
     except json.JSONDecodeError as e:
         raise ValueError(f"Invalid JSON format in predictions.json: {e}") from e
-
 
 def format_predictions(predictions):
     if not predictions:

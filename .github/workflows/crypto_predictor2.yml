@@ -18,12 +18,6 @@ jobs:
 
     - name: Install Dependencies
       run: pip install -r requirements.txt  # Install required Python libraries
-
-    
-    
-    
-    
-    
     
     - name: Run Predictor Script
       run: |
@@ -37,6 +31,11 @@ jobs:
         path: predictions.json
 
     - name: Debug Predictions Output
+      run: |
+        echo "Contents of predictions.json:"
+        cat predictions.json
+
+    - name: Debug Predictions File
       run: |
         echo "Contents of predictions.json:"
         cat predictions.json
