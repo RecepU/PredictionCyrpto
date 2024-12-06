@@ -20,8 +20,11 @@ jobs:
       run: pip install -r requirements.txt  # Install required Python libraries
     
     - name: Run Predictor Script
+      run: python app.py  # Run the script normally; do not redirect output
+
+    - name: Debug Predictions File
       run: |
-        python app.py > predictions.json  # Save predictions to a JSON file
+        echo "Contents of predictions.json:"
         cat predictions.json
 
     - name: Upload Predictions
@@ -29,14 +32,3 @@ jobs:
       with:
         name: predictions
         path: predictions.json
-
-    - name: Debug Predictions Output
-      run: |
-        echo "Contents of predictions.json:"
-        cat predictions.json
-
-    - name: Debug Predictions File
-      run: |
-        echo "Contents of predictions.json:"
-        cat predictions.json
-

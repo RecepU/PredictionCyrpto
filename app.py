@@ -95,56 +95,49 @@ def fetch_lunarcrush_data():
 
 # 5. Combine and rank tokens by potential gainers
 def rank_gainers(data_sources):
-    try:
-        combined_data = pd.DataFrame()
+    combined_data = pd.DataFrame()
 
-        # Merge all data sources on 'symbol'
-        for source in data_sources:
-            if not source.empty:
-                combined_data = source if combined_data.empty else pd.merge(combined_data, source, on='symbol', how='outer')
+    # Merge all data sources on 'symbol'
+    for source in data_sources:
+        if not source.empty:
+            combined_data = source if combined_data.empty else pd.merge(combined_data, source, on='symbol', how='outer')
 
-        # Fill missing columns with default values
-        for column in ['price', 'volume_24h', 'percent_change_24h', 'galaxy_score']:
-            if column not in combined_data.columns:
-                combined_data[column] = np.nan
+    # Fill missing columns with default values
+    for column in ['price', 'volume_24h', 'percent_change_24h', 'galaxy_score']:
+        if column not in combined_data.columns:
+            combined_data[column] = np.nan
 
-        # Fill NaNs for combined data
-        combined_data.fillna(0, inplace=True)
+    # Fill NaNs for combined data
+    combined_data.fillna(0, inplace=True)
 
-        # Sort by percent_change_24h
-        combined_data.sort_values(by='percent_change_24h', ascending=False, inplace=True)
+    # Sort by percent_change_24h
+    combined_data.sort_values(by='percent_change_24h', ascending=False, inplace=True)
 
-        # Add reasoning column
-        combined_data['reason'] = combined_data.apply(
-            lambda row: f"Social activity: {row.get('social_score', 'N/A')}, Price Change: {row['percent_change_24h']}%",
-            axis=1
-        )
+    # Add reasoning column
+    combined_data['reason'] = combined_data.apply(
+        lambda row: f"Social activity: {row.get('social_score', 'N/A')}, Price Change: {row['percent_change_24h']}%",
+        axis=1
+    )
 
-        # Return top gainers
-        return combined_data[['symbol', 'price', 'percent_change_24h', 'volume_24h', 'galaxy_score', 'reason']].head(10)
-    except Exception as e:
-        print(f"Error during ranking: {e}")
-        return pd.DataFrame()
+    # Return top gainers
+    return combined_data[['symbol', 'price', 'percent_change_24h', 'volume_24h', 'galaxy_score', 'reason']].head(10)
 
 # Main function
 if __name__ == "__main__":
-    try:
-        kucoin_data = fetch_kucoin_data()
-        cmc_data = fetch_coinmarketcap_data()
-        coingecko_data = fetch_coingecko_data()
-        lunar_data = fetch_lunarcrush_data()
+    kucoin_data = fetch_kucoin_data()
+    cmc_data = fetch_coinmarketcap_data()
+    coingecko_data = fetch_coingecko_data()
+    lunar_data = fetch_lunarcrush_data()
 
-        # Collect all data sources
-        data_sources = [kucoin_data, cmc_data, coingecko_data, lunar_data]
+    # Collect all data sources
+    data_sources = [kucoin_data, cmc_data, coingecko_data, lunar_data]
 
-        predictions = rank_gainers(data_sources)
+    predictions = rank_gainers(data_sources)
 
-        if not predictions.empty:
-            predictions_json = predictions.to_dict(orient="records")
-            with open("predictions.json", "w") as f:
-                json.dump(predictions_json, f, indent=4)
-            print("Predictions saved to predictions.json")
-        else:
-            print("No data available to calculate predictions.")
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
+    if not predictions.empty:
+        predictions_json = predictions.to_dict(orient="records")
+        with open("predictions.json", "w") as f:
+            json.dump(predictions_json, f, indent=4)
+        print("Predictions saved to predictions.json")
+    else:
+        print("No data available to calculate predictions.")
