@@ -17,6 +17,7 @@ def fetch_predictions_from_github():
         print("Failed to fetch artifacts.")
         return False
 
+    # Parse artifacts response
     artifacts = response.json().get("artifacts", [])
     for artifact in artifacts:
         print(f"Found Artifact: {artifact['name']}")
@@ -42,11 +43,11 @@ def extract_and_validate_predictions():
     with zipfile.ZipFile("predictions.json.zip", "r") as zip_ref:
         zip_ref.extractall(".")
     
-    # Load and validate the predictions JSON
+    # Validate the predictions JSON
     try:
         with open("predictions.json", "r") as f:
             data = f.read().strip()
-            print("Raw predictions.json content:", data)  # Debugging step
+            print("Raw predictions.json content for debugging:", data[:500])  # Show first 500 chars for debugging
             if not data:
                 raise ValueError("The predictions.json file is empty.")
             
@@ -78,11 +79,11 @@ def format_predictions(predictions):
 
 # Main function to handle everything
 if __name__ == "__main__":
-    if fetch_predictions_from_github():
-        try:
+    try:
+        if fetch_predictions_from_github():
             predictions = extract_and_validate_predictions()
             print(format_predictions(predictions))
-        except Exception as e:
-            print(f"Error: {e}")
-    else:
-        print("Failed to fetch predictions.")
+        else:
+            print("Failed to fetch predictions.")
+    except Exception as e:
+        print(f"Error: {e}")
