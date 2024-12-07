@@ -2,11 +2,17 @@ import requests
 import zipfile
 import os
 import json
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+github_token = os.getenv("GITHUB_TOKEN")
 
 def fetch_predictions_from_github():
     owner = "RecepU"
     repo = "PredictionCyrpto"
-    headers = {"Authorization": f"Bearer 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"}  # Replace with your token
+    headers = {"Authorization": f"Bearer {github_token}"}  # Replace with your token
 
     # Get the list of artifacts
     url = f"https://api.github.com/repos/{owner}/{repo}/actions/artifacts"
