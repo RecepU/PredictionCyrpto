@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest  # GitHub Actions runner
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Repository
@@ -21,12 +21,32 @@ jobs:
     - name: Install Dependencies
       run: pip install -r requirements.txt
 
-    - name: Set Git Identity
+    - name: Set Environment Variables
+      env:
+        COINMARKETCAP_API_KEY: ${{ secrets.COINMARKETCAP_API_KEY }}
+        LUNARCRUSH_API_KEY: ${{ secrets.LUNARCRUSH_API_KEY }}
+        CRYPTOCOMPARE_API_KEY: ${{ secrets.CRYPTOCOMPARE_API_KEY }}
+        ALPHA_VANTAGE_API_KEY: ${{ secrets.ALPHA_VANTAGE_API_KEY }}
+      run: echo "Environment variables loaded."
+
+    - name: Debug Environment Variables
       run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
+        echo "COINMARKETCAP_API_KEY: ${COINMARKETCAP_API_KEY}"
+        echo "LUNARCRUSH_API_KEY: ${LUNARCRUSH_API_KEY}"
+        echo "CRYPTOCOMPARE_API_KEY: ${CRYPTOCOMPARE_API_KEY}"
+        echo "ALPHA_VANTAGE_API_KEY: ${ALPHA_VANTAGE_API_KEY}"
+      env:
+        COINMARKETCAP_API_KEY: ${{ secrets.COINMARKETCAP_API_KEY }}
+        LUNARCRUSH_API_KEY: ${{ secrets.LUNARCRUSH_API_KEY }}
+        CRYPTOCOMPARE_API_KEY: ${{ secrets.CRYPTOCOMPARE_API_KEY }}
+        ALPHA_VANTAGE_API_KEY: ${{ secrets.ALPHA_VANTAGE_API_KEY }}
 
     - name: Run Predictor Script
+      env:
+        COINMARKETCAP_API_KEY: ${{ secrets.COINMARKETCAP_API_KEY }}
+        LUNARCRUSH_API_KEY: ${{ secrets.LUNARCRUSH_API_KEY }}
+        CRYPTOCOMPARE_API_KEY: ${{ secrets.CRYPTOCOMPARE_API_KEY }}
+        ALPHA_VANTAGE_API_KEY: ${{ secrets.ALPHA_VANTAGE_API_KEY }}
       run: python app.py  # Generate predictions.json
 
     - name: Debug Predictions File
@@ -34,9 +54,16 @@ jobs:
         echo "Contents of predictions.json:"
         cat predictions.json
 
+    - name: Set Git Identity
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+
+    - name: Set up GitHub Authentication
+      run: |
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
     - name: Deploy to GitHub Pages
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         touch .nojekyll
         git add predictions.json .nojekyll
