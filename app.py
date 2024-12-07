@@ -2,12 +2,15 @@ import requests
 import pandas as pd
 import numpy as np
 import json
+import os
+from dotenv import load_dotenv
 
-# API Keys
-COINMARKETCAP_API_KEY = "07a86387-ea6f-40f9-b81e-03261c529152"
-LUNARCRUSH_API_KEY = "vrhi6fbieidevfpq5wqboxy6hhm4a429mk6b4t6qx"
-CRYPTOCOMPARE_API_KEY = "e66a3793b0b278c054bd5fc67f20cea64c32d66206ed63400112e189c34f8166"
-ALPHA_VANTAGE_API_KEY = "VJKPIK7L2NTUKR9V"
+load_dotenv()
+
+COINMARKETCAP_API_KEY = os.getenv("COINMARKETCAP_API_KEY")
+LUNARCRUSH_API_KEY = os.getenv("LUNARCRUSH_API_KEY")
+CRYPTOCOMPARE_API_KEY = os.getenv("CRYPTOCOMPARE_API_KEY")
+ALPHA_VANTAGE_API_KEY = os.getenv("ALPHA_VANTAGE_API_KEY")
 
 # KuCoin Endpoint
 KUCOIN_API_URL = "https://api.kucoin.com/api/v1/market/allTickers"
