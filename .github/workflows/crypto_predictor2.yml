@@ -1,13 +1,13 @@
 name: Run Crypto Predictor
 
 on:
-  # workflow_dispatch:  # Allows manual triggering of the workflow
+  workflow_dispatch:  # Allows manual triggering of the workflow
   schedule:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
 
 jobs:
-  run-predictor:
-    runs-on: ubuntu-latest  # Use GitHub's Ubuntu runner
+  deploy:
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Repository
@@ -24,20 +24,11 @@ jobs:
     - name: Run Predictor Script
       run: python app.py  # Generate predictions.json
 
-    - name: Debug Predictions File
-      run: |
-        echo "Contents of predictions.json:"
-        cat predictions.json
-
-    - name: Deploy Predictions to GitHub Pages
+    - name: Deploy to GitHub Pages
       env:
-        GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Use the renamed secret
+        GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
-        mkdir -p docs
-        cp predictions.json docs/
-        touch docs/.nojekyll
-        git add docs/predictions.json docs/.nojekyll
+        touch .nojekyll  # Add .nojekyll to disable Jekyll
+        git add predictions.json .nojekyll
         git commit -m "Update predictions.json"
         git push origin main
