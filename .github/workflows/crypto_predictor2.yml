@@ -24,11 +24,14 @@ jobs:
     - name: Run Predictor Script
       run: python app.py  # Generate predictions.json
 
+    - name: Debug Generated JSON
+      run: cat predictions.json
+
     - name: Deploy to GitHub Pages
       env:
         GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       run: |
         touch .nojekyll  # Add .nojekyll to disable Jekyll
         git add predictions.json .nojekyll
-        git commit -m "Update predictions.json"
-        git push origin main
+        git commit -m "Update predictions.json" || echo "No changes to commit"
+        git push origin main --force
