@@ -37,6 +37,7 @@ jobs:
         git config --global user.email "actions@github.com"
         mkdir -p docs
         cp predictions.json docs/
-        git add docs/predictions.json
+        touch docs/.nojekyll  # Add the .nojekyll file
+        git add docs/predictions.json docs/.nojekyll
         git commit -m "Update predictions.json"
         git push origin main
