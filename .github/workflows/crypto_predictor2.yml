@@ -21,24 +21,22 @@ jobs:
     - name: Install Dependencies
       run: pip install -r requirements.txt
 
-    - name: Install python-dotenv (Explicitly)
-      run: pip install python-dotenv
-
-    - name: Debug Python Environment
+    - name: Set Git Identity
       run: |
-        which python
-        python --version
-        pip list
-
-    - name: Debug Installed Packages
-      run: pip list  # List installed packages to verify `dotenv` is installed
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
 
     - name: Run Predictor Script
-      run: python app.py
+      run: python app.py  # Generate predictions.json
 
-    - name: Deploy Predictions
+    - name: Debug Predictions File
+      run: |
+        echo "Contents of predictions.json:"
+        cat predictions.json
+
+    - name: Deploy to GitHub Pages
       env:
-        GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         touch .nojekyll
         git add predictions.json .nojekyll
