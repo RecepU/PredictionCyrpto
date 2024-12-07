@@ -3,6 +3,11 @@ name: Run Crypto Predictor
 on:
   workflow_dispatch:  # Allows manual triggering of the workflow
 
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+
+
 jobs:
   run-predictor:
     runs-on: ubuntu-latest  # Use GitHub's Ubuntu runner
@@ -32,3 +37,16 @@ jobs:
       with:
         name: predictions
         path: predictions.json
+
+    - name: Deploy Predictions to GitHub Pages
+      run: |
+        mkdir -p docs
+        cp predictions.json docs/
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add docs/predictions.json
+        git commit -m "Update predictions.json"
+        git push origin main
+
+        
+
