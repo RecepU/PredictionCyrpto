@@ -21,6 +21,15 @@ jobs:
     - name: Install Dependencies
       run: pip install -r requirements.txt
 
+    - name: Install python-dotenv (Explicitly)
+      run: pip install python-dotenv
+
+    - name: Debug Python Environment
+      run: |
+        which python
+        python --version
+        pip list
+
     - name: Debug Installed Packages
       run: pip list  # List installed packages to verify `dotenv` is installed
 
