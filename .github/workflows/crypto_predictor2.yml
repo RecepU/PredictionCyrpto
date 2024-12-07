@@ -2,11 +2,8 @@ name: Run Crypto Predictor
 
 on:
   workflow_dispatch:  # Allows manual triggering of the workflow
-
-on:
   schedule:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
-
 
 jobs:
   run-predictor:
@@ -23,30 +20,23 @@ jobs:
 
     - name: Install Dependencies
       run: pip install -r requirements.txt  # Install required Python libraries
-    
+
     - name: Run Predictor Script
-      run: python app.py  # Run the script normally; do not redirect output
+      run: python app.py  # Generate predictions.json
 
     - name: Debug Predictions File
       run: |
         echo "Contents of predictions.json:"
         cat predictions.json
 
-    - name: Upload Predictions
-      uses: actions/upload-artifact@v3  # Make predictions available for download
-      with:
-        name: predictions
-        path: predictions.json
-
     - name: Deploy Predictions to GitHub Pages
+      env:
+        GITHUB_TOKEN: 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
       run: |
-        mkdir -p docs
-        cp predictions.json docs/
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
+        mkdir -p docs
+        cp predictions.json docs/
         git add docs/predictions.json
         git commit -m "Update predictions.json"
         git push origin main
-
-        
-
