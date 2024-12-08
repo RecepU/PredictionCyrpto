@@ -21,6 +21,13 @@ jobs:
     - name: Install Dependencies
       run: pip install -r requirements.txt
 
+    - name: Remove Existing Predictions File
+      run: |
+        if [ -f predictions.json ]; then
+          echo "Deleting existing predictions.json"
+          rm predictions.json
+        fi      
+
     - name: Set Environment Variables
       env:
         COINMARKETCAP_API_KEY: ${{ secrets.COINMARKETCAP_API_KEY }}
