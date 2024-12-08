@@ -61,7 +61,7 @@ jobs:
 
     - name: Set up GitHub Authentication
       run: |
-        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        git remote set-url origin https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}
 
     - name: Deploy to GitHub Pages
       run: |
