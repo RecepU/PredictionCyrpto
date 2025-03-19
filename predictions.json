@@ -1,82 +1,82 @@
 [
     {
-        "symbol": "tkx",
-        "price": 33.55,
-        "percent_change_24h": 12.52015,
-        "volume_24h": 18079321.0,
+        "symbol": "hype",
+        "price": 14.4,
+        "percent_change_24h": 9.58852,
+        "volume_24h": 63548780.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 12.52015%"
+        "reason": "Social activity: N/A, Price Change: 9.58852%"
     },
     {
-        "symbol": "pepe",
-        "price": 7.39e-06,
-        "percent_change_24h": 11.12574,
-        "volume_24h": 859141664.0,
+        "symbol": "trx",
+        "price": 0.241857,
+        "percent_change_24h": 9.57285,
+        "volume_24h": 1173531997.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 11.12574%"
+        "reason": "Social activity: N/A, Price Change: 9.57285%"
+    },
+    {
+        "symbol": "bgb",
+        "price": 4.63,
+        "percent_change_24h": 4.19524,
+        "volume_24h": 199511304.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 4.19524%"
+    },
+    {
+        "symbol": "dot",
+        "price": 4.5,
+        "percent_change_24h": 3.55645,
+        "volume_24h": 179577451.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 3.55645%"
+    },
+    {
+        "symbol": "ton",
+        "price": 3.59,
+        "percent_change_24h": 3.34125,
+        "volume_24h": 330106172.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 3.34125%"
+    },
+    {
+        "symbol": "uni",
+        "price": 6.45,
+        "percent_change_24h": 2.76102,
+        "volume_24h": 125755510.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 2.76102%"
+    },
+    {
+        "symbol": "xlm",
+        "price": 0.277637,
+        "percent_change_24h": 2.42747,
+        "volume_24h": 181131155.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 2.42747%"
     },
     {
         "symbol": "okb",
-        "price": 52.4,
-        "percent_change_24h": 9.09022,
-        "volume_24h": 16157426.0,
+        "price": 53.72,
+        "percent_change_24h": 2.16572,
+        "volume_24h": 23351264.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 9.09022%"
+        "reason": "Social activity: N/A, Price Change: 2.16572%"
     },
     {
-        "symbol": "sui",
-        "price": 2.37,
-        "percent_change_24h": 5.06309,
-        "volume_24h": 790639457.0,
+        "symbol": "avax",
+        "price": 19.15,
+        "percent_change_24h": 1.62332,
+        "volume_24h": 280243402.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 5.06309%"
+        "reason": "Social activity: N/A, Price Change: 1.62332%"
     },
     {
-        "symbol": "aave",
-        "price": 174.43,
-        "percent_change_24h": 4.83479,
-        "volume_24h": 285354501.0,
+        "symbol": "apt",
+        "price": 5.4,
+        "percent_change_24h": 1.61633,
+        "volume_24h": 150763562.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 4.83479%"
-    },
-    {
-        "symbol": "bnb",
-        "price": 634.65,
-        "percent_change_24h": 4.52615,
-        "volume_24h": 1782965801.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 4.52615%"
-    },
-    {
-        "symbol": "icp",
-        "price": 5.87,
-        "percent_change_24h": 4.50134,
-        "volume_24h": 68527992.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 4.50134%"
-    },
-    {
-        "symbol": "ondo",
-        "price": 0.854502,
-        "percent_change_24h": 4.06284,
-        "volume_24h": 170148209.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 4.06284%"
-    },
-    {
-        "symbol": "om",
-        "price": 7.04,
-        "percent_change_24h": 3.87945,
-        "volume_24h": 229106654.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 3.87945%"
-    },
-    {
-        "symbol": "link",
-        "price": 14.0,
-        "percent_change_24h": 3.79132,
-        "volume_24h": 411419237.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 3.79132%"
+        "reason": "Social activity: N/A, Price Change: 1.61633%"
     }
 ]
