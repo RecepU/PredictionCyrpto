@@ -1,46 +1,62 @@
 [
     {
-        "symbol": "tkx",
-        "price": 35.99,
-        "percent_change_24h": 0.33927,
-        "volume_24h": 23129044.0,
+        "symbol": "usds",
+        "price": 1.001,
+        "percent_change_24h": 0.11874,
+        "volume_24h": 15426672.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.33927%"
+        "reason": "Social activity: N/A, Price Change: 0.11874%"
+    },
+    {
+        "symbol": "cro",
+        "price": 0.102708,
+        "percent_change_24h": 0.0339,
+        "volume_24h": 48238101.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0339%"
     },
     {
         "symbol": "usde",
-        "price": 0.999226,
-        "percent_change_24h": 0.04745,
-        "volume_24h": 129544370.0,
+        "price": 0.999619,
+        "percent_change_24h": 0.02758,
+        "volume_24h": 111125566.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.04745%"
-    },
-    {
-        "symbol": "usds",
-        "price": 0.999961,
-        "percent_change_24h": 0.03282,
-        "volume_24h": 21350013.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.03282%"
-    },
-    {
-        "symbol": "usdc",
-        "price": 0.999999,
-        "percent_change_24h": 0.01254,
-        "volume_24h": 6529829888.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.01254%"
+        "reason": "Social activity: N/A, Price Change: 0.02758%"
     },
     {
         "symbol": "dai",
-        "price": 0.999595,
-        "percent_change_24h": 0.00623,
-        "volume_24h": 193426397.0,
+        "price": 0.999735,
+        "percent_change_24h": 0.01821,
+        "volume_24h": 120751405.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.00623%"
+        "reason": "Social activity: N/A, Price Change: 0.01821%"
     },
     {
-        "symbol": "QUILL-USDT",
+        "symbol": "usdt",
+        "price": 0.999653,
+        "percent_change_24h": 0.01241,
+        "volume_24h": 35572596156.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.01241%"
+    },
+    {
+        "symbol": "PORTAL-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "POPCAT-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "PONKE-USDT",
         "price": 0.0,
         "percent_change_24h": 0.0,
         "volume_24h": 0.0,
@@ -57,22 +73,6 @@
     },
     {
         "symbol": "POND-BTC",
-        "price": 0.0,
-        "percent_change_24h": 0.0,
-        "volume_24h": 0.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.0%"
-    },
-    {
-        "symbol": "PONCH-USDT",
-        "price": 0.0,
-        "percent_change_24h": 0.0,
-        "volume_24h": 0.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.0%"
-    },
-    {
-        "symbol": "POLYX-USDT",
         "price": 0.0,
         "percent_change_24h": 0.0,
         "volume_24h": 0.0,
