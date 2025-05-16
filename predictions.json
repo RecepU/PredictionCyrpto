@@ -1,67 +1,51 @@
 [
     {
-        "symbol": "leo",
-        "price": 8.88,
-        "percent_change_24h": 1.99456,
-        "volume_24h": 4896654.0,
+        "symbol": "hype",
+        "price": 26.32,
+        "percent_change_24h": 3.74008,
+        "volume_24h": 163164656.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 1.99456%"
+        "reason": "Social activity: N/A, Price Change: 3.74008%"
     },
     {
-        "symbol": "trx",
-        "price": 0.275031,
-        "percent_change_24h": 1.8423,
-        "volume_24h": 1226798765.0,
+        "symbol": "bgb",
+        "price": 4.9,
+        "percent_change_24h": 2.32358,
+        "volume_24h": 231124301.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 1.8423%"
+        "reason": "Social activity: N/A, Price Change: 2.32358%"
     },
     {
-        "symbol": "wbt",
-        "price": 30.37,
-        "percent_change_24h": 0.71508,
-        "volume_24h": 24627792.0,
+        "symbol": "wbtc",
+        "price": 103781.0,
+        "percent_change_24h": 0.17531,
+        "volume_24h": 323918430.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.71508%"
+        "reason": "Social activity: N/A, Price Change: 0.17531%"
     },
     {
-        "symbol": "okb",
-        "price": 54.57,
-        "percent_change_24h": 0.13098,
-        "volume_24h": 11071829.0,
+        "symbol": "btc",
+        "price": 103935.0,
+        "percent_change_24h": 0.13875,
+        "volume_24h": 32487622482.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.13098%"
-    },
-    {
-        "symbol": "dai",
-        "price": 1.0,
-        "percent_change_24h": 0.03405,
-        "volume_24h": 107977533.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.03405%"
-    },
-    {
-        "symbol": "usdt",
-        "price": 1.0,
-        "percent_change_24h": 0.00513,
-        "volume_24h": 68519435543.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.00513%"
+        "reason": "Social activity: N/A, Price Change: 0.13875%"
     },
     {
         "symbol": "cbbtc",
-        "price": 103817.0,
-        "percent_change_24h": 0.00276,
-        "volume_24h": 360132493.0,
+        "price": 103892.0,
+        "percent_change_24h": 0.10802,
+        "volume_24h": 406123311.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.00276%"
+        "reason": "Social activity: N/A, Price Change: 0.10802%"
     },
     {
-        "symbol": "QUICK-USDT",
-        "price": 0.0,
-        "percent_change_24h": 0.0,
-        "volume_24h": 0.0,
+        "symbol": "usde",
+        "price": 1.001,
+        "percent_change_24h": 0.01516,
+        "volume_24h": 86529567.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.0%"
+        "reason": "Social activity: N/A, Price Change: 0.01516%"
     },
     {
         "symbol": "QTUM-USDT",
@@ -73,6 +57,22 @@
     },
     {
         "symbol": "QORPO-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "QNT-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "QNT",
         "price": 0.0,
         "percent_change_24h": 0.0,
         "volume_24h": 0.0,
