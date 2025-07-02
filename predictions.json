@@ -1,82 +1,82 @@
 [
     {
-        "symbol": "xmr",
-        "price": 323.97,
-        "percent_change_24h": 3.44363,
-        "volume_24h": 95449884.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 3.44363%"
-    },
-    {
-        "symbol": "xrp",
-        "price": 2.24,
-        "percent_change_24h": 1.59152,
-        "volume_24h": 3631919186.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 1.59152%"
-    },
-    {
-        "symbol": "bch",
-        "price": 507.22,
-        "percent_change_24h": 1.4238,
-        "volume_24h": 365105050.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 1.4238%"
-    },
-    {
-        "symbol": "sol",
-        "price": 154.53,
-        "percent_change_24h": 1.15569,
-        "volume_24h": 4911988054.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 1.15569%"
-    },
-    {
-        "symbol": "jitosol",
-        "price": 187.34,
-        "percent_change_24h": 1.14874,
-        "volume_24h": 62738971.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 1.14874%"
-    },
-    {
-        "symbol": "trx",
-        "price": 0.279699,
-        "percent_change_24h": 1.13962,
-        "volume_24h": 467995615.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 1.13962%"
-    },
-    {
-        "symbol": "bnb",
-        "price": 658.09,
-        "percent_change_24h": 0.43115,
-        "volume_24h": 523461511.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.43115%"
-    },
-    {
-        "symbol": "apt",
-        "price": 4.92,
-        "percent_change_24h": 0.10676,
-        "volume_24h": 201682621.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.10676%"
-    },
-    {
-        "symbol": "usde",
+        "symbol": "bsc-usd",
         "price": 1.0,
-        "percent_change_24h": 0.0686,
-        "volume_24h": 88000853.0,
+        "percent_change_24h": 0.02881,
+        "volume_24h": 4744826966.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.0686%"
+        "reason": "Social activity: N/A, Price Change: 0.02881%"
     },
     {
-        "symbol": "susde",
-        "price": 1.18,
-        "percent_change_24h": 0.02492,
-        "volume_24h": 3535714.0,
+        "symbol": "susds",
+        "price": 1.057,
+        "percent_change_24h": 0.00408,
+        "volume_24h": 15974292.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.02492%"
+        "reason": "Social activity: N/A, Price Change: 0.00408%"
+    },
+    {
+        "symbol": "PYUSD",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "PYTHUP-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "PYTHDOWN-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "PYTH-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "PYTH",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "PYR-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "PYR-BTC",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "PUSH-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
     }
 ]
