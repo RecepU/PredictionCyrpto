@@ -1,78 +1,78 @@
 [
     {
-        "symbol": "wlfi",
-        "price": 0.23845,
-        "percent_change_24h": 5.60983,
-        "volume_24h": 1429868594.0,
+        "symbol": "mnt",
+        "price": 1.75,
+        "percent_change_24h": 14.01302,
+        "volume_24h": 542467481.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 5.60983%"
+        "reason": "Social activity: N/A, Price Change: 14.01302%"
+    },
+    {
+        "symbol": "m",
+        "price": 2.6,
+        "percent_change_24h": 8.39746,
+        "volume_24h": 37547018.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 8.39746%"
+    },
+    {
+        "symbol": "avax",
+        "price": 34.06,
+        "percent_change_24h": 5.13818,
+        "volume_24h": 2168499511.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 5.13818%"
     },
     {
         "symbol": "ip",
-        "price": 13.33,
-        "percent_change_24h": 4.87117,
-        "volume_24h": 513593389.0,
+        "price": 13.53,
+        "percent_change_24h": 1.2942,
+        "volume_24h": 332811600.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 4.87117%"
+        "reason": "Social activity: N/A, Price Change: 1.2942%"
     },
     {
-        "symbol": "susde",
-        "price": 1.2,
-        "percent_change_24h": 0.12409,
-        "volume_24h": 33145504.0,
+        "symbol": "figr_heloc",
+        "price": 0.997004,
+        "percent_change_24h": 0.97819,
+        "volume_24h": 10440474.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.12409%"
+        "reason": "Social activity: N/A, Price Change: 0.97819%"
+    },
+    {
+        "symbol": "bgb",
+        "price": 5.2,
+        "percent_change_24h": 0.8911,
+        "volume_24h": 529230308.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.8911%"
+    },
+    {
+        "symbol": "usde",
+        "price": 1.001,
+        "percent_change_24h": 0.13981,
+        "volume_24h": 448782816.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.13981%"
+    },
+    {
+        "symbol": "bsc-usd",
+        "price": 1.001,
+        "percent_change_24h": 0.0627,
+        "volume_24h": 3190552593.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0627%"
     },
     {
         "symbol": "usdt",
         "price": 1.001,
-        "percent_change_24h": 0.02216,
-        "volume_24h": 58634060059.0,
+        "percent_change_24h": 0.031,
+        "volume_24h": 145075133757.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.02216%"
+        "reason": "Social activity: N/A, Price Change: 0.031%"
     },
     {
-        "symbol": "usdc",
-        "price": 0.999704,
-        "percent_change_24h": 0.00344,
-        "volume_24h": 6195121585.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.00344%"
-    },
-    {
-        "symbol": "RDNT-USDT",
-        "price": 0.0,
-        "percent_change_24h": 0.0,
-        "volume_24h": 0.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.0%"
-    },
-    {
-        "symbol": "RCADE-USDT",
-        "price": 0.0,
-        "percent_change_24h": 0.0,
-        "volume_24h": 0.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.0%"
-    },
-    {
-        "symbol": "RAY-USDT",
-        "price": 0.0,
-        "percent_change_24h": 0.0,
-        "volume_24h": 0.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.0%"
-    },
-    {
-        "symbol": "RAY",
-        "price": 0.0,
-        "percent_change_24h": 0.0,
-        "volume_24h": 0.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 0.0%"
-    },
-    {
-        "symbol": "RATS-USDT",
+        "symbol": "RIFSOL-USDT",
         "price": 0.0,
         "percent_change_24h": 0.0,
         "volume_24h": 0.0,
