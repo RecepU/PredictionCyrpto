@@ -1,82 +1,82 @@
 [
     {
-        "symbol": "pump",
-        "price": 0.00501825,
-        "percent_change_24h": 8.30547,
-        "volume_24h": 182188991.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 8.30547%"
-    },
-    {
-        "symbol": "cc",
-        "price": 0.117925,
-        "percent_change_24h": 6.67374,
-        "volume_24h": 10052005.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 6.67374%"
-    },
-    {
         "symbol": "uni",
-        "price": 4.69,
-        "percent_change_24h": 5.76669,
-        "volume_24h": 265878490.0,
+        "price": 5.11,
+        "percent_change_24h": 8.62702,
+        "volume_24h": 880217165.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 5.76669%"
-    },
-    {
-        "symbol": "okb",
-        "price": 114.98,
-        "percent_change_24h": 4.71677,
-        "volume_24h": 20221686.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 4.71677%"
-    },
-    {
-        "symbol": "m",
-        "price": 1.079,
-        "percent_change_24h": 4.19967,
-        "volume_24h": 994062.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 4.19967%"
-    },
-    {
-        "symbol": "zec",
-        "price": 832.64,
-        "percent_change_24h": 3.37978,
-        "volume_24h": 1111386443.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 3.37978%"
-    },
-    {
-        "symbol": "hype",
-        "price": 83.2,
-        "percent_change_24h": 3.37163,
-        "volume_24h": 946316740.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 3.37163%"
-    },
-    {
-        "symbol": "aave",
-        "price": 125.18,
-        "percent_change_24h": 2.79248,
-        "volume_24h": 192828282.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 2.79248%"
-    },
-    {
-        "symbol": "near",
-        "price": 1.85,
-        "percent_change_24h": 1.91329,
-        "volume_24h": 135112077.0,
-        "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 1.91329%"
+        "reason": "Social activity: N/A, Price Change: 8.62702%"
     },
     {
         "symbol": "mnt",
-        "price": 0.517326,
-        "percent_change_24h": 1.7166,
-        "volume_24h": 16555363.0,
+        "price": 0.547003,
+        "percent_change_24h": 5.80652,
+        "volume_24h": 38359496.0,
         "galaxy_score": 0.0,
-        "reason": "Social activity: N/A, Price Change: 1.7166%"
+        "reason": "Social activity: N/A, Price Change: 5.80652%"
+    },
+    {
+        "symbol": "xmr",
+        "price": 495.61,
+        "percent_change_24h": 4.62787,
+        "volume_24h": 186557623.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 4.62787%"
+    },
+    {
+        "symbol": "m",
+        "price": 1.086,
+        "percent_change_24h": 0.63914,
+        "volume_24h": 1403695.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.63914%"
+    },
+    {
+        "symbol": "REDSTONE-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "RVV-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "REACT-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "RE-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "RAY-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
+    },
+    {
+        "symbol": "RAVE-USDT",
+        "price": 0.0,
+        "percent_change_24h": 0.0,
+        "volume_24h": 0.0,
+        "galaxy_score": 0.0,
+        "reason": "Social activity: N/A, Price Change: 0.0%"
     }
 ]
